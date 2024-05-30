@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.inicio,
+.sesion,
+.escudo {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  text-align: center;
+  margin-left: 10px;
+  background-color: #2d4b48;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.inicio img {
+  width: 60px;
+}
+
+button:hover {
+  background-color: #497e78;
+}
+
+/* Estilos adicionales para ajustar el diseño según necesidad */
+.titulo {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.escudo img {
+  max-width: 50px;
+  /* Ajusta el tamaño del escudo según necesites */
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: solid 1px black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group-documento {
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: calc(33.33% - 40px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.form-group-documento input {
+  width: calc(44% - 0px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.form-group input:nth-child(2),
+.form-group input:nth-child(3) {
+  margin-left: 20px;
+}
+
+.form-group-documento input:nth-child(2),
+.form-group input:nth-child(3) {
+  margin-left: 20px;
+}
+
+.form-group,
+form-group-documento label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input[type="email"] {
+  width: calc(100% - 25px);
+}
+
+.form-group-documet input[type="email"] {
+  width: calc(50% - 25px);
+}
+
+.form-group input[type="submit"] {
+  background-color: #2d4b48;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #497e78;
+}
+
+.linea {
+  border: none;
+  border-top: 1px solid black;
+  /* Color y grosor de la línea */
+  width: 100%;
+  /* Anchura de la línea */
+  margin: 0px auto;
+  /* Margen para centrar la línea */
+}
+
+@media (max-width: 768px) {
+
+  header .sesion {
+    flex-direction: column;
+    width: auto;
+    margin: 0px 0px 0px;
+    padding: 8px 10px;
+  }
+
+  .form-group-documento input {
+    width: calc(44% - 10px);
+  }
+
+  .titulo {
+    font-size: 10px;
+  }
+
+  button {
+    width: 110px;
+    margin: 0 0 10px;
+    padding: 8px 10px;
+  }
+}
