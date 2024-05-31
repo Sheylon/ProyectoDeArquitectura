@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Inscripción</title>
+  <link rel="stylesheet" href="/css/stylesconsultaMatriculas.css">
+  <link rel="stylesheet" href="/css/stylesHeader.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="/js/scrptinscripcion.js"></script>
+</head>
+
+<body>
+
+    <header>
+      <div class="contenido">
+         <h2>SISTEMA DE MATRÍCULA <BR> IED FRANCISCO DE PAULA SANTANDER</h2>
+      </div>
+      
+      <nav>
+        <div class="nav-left">
+          <a href="#about">Acerca de</a>
+          <a href="#location">Localización</a>
+          <a href="#contact">Contacto</a>
+        </div>
+        <div class="nav-center">
+          <img src="/img/escudo.png" alt="Escudo del colegio">
+          <h3>IED FRANCISCO DE <BR> PAULA SANTANDER</h3>
+        </div>
+        <div class="nav-right">
+          <img src="img/iconoinicio.png" alt="">
+          <button onclick="redirigir('/indexiniciosesion.html')">Iniciar Sesión</button>
+          <button>Registrarse</button>
+        </div>
+      </nav>
+  </header>
+   
+  <div class="title">
+    <h1>Consultar estado de Matricula</h1>
+  </div>
+
+  <div class="container">
+
+    <div class="descricion ">
+      <p class="textodescripcion">Introduzca el correo electronico <br> con el cual se registró para <br> enviar código de matricula</p>
+    </div>
+    <div class="formulario">
+      <form>
+        <div class="input-group">
+          <label for="email"><i class="far fa-envelope"></i></label>
+          <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+        </div>
+        
+        <button type="submit">Eviar correo </button>
+      </form>
+      <p>Al darle eviar debe revisar el correo electronico ingresado</p>
+    </div>
+  </div>
+
+  <button type="submit">Continuar</button>
+
+
+  <iframe class="header" src="/Templates/Footer.html" frameborder="0"></iframe>
+</body>
+
+</html>

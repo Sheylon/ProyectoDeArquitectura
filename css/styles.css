@@ -3,13 +3,13 @@ body {
     margin: 0;
     padding: 0;
 }
-
-header {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    height: 50px;
+.header{
+    width: 100% !important;
+    height: 170px;
+}
+  
+.footer{
+    width: 100% !important;
 }
 
 h1 {

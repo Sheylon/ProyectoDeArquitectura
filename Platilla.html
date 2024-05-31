@@ -5,41 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platilla</title>
-    <link rel="stylesheet" href="./css/stylesHeader.css">
-    <link rel="stylesheet" href="./css/stylesFooter.css">
-
-    <script
-        src="https://code.jquery.com/jquery-3.6.1.min.js"
-        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-        crossorigin="anonymous">
-    </script>
-
-    <script>
-        $(function(){
-            $("#contenidoHeader").load("/Templates/header.html");
-        });
-    </script>
-
-    <script>
-        $(function(){
-            $("#contenidoFooter").load("/Templates/Footer.html");
-        });
-    </script>
-    
-
+    <link rel="stylesheet" href="/css/stylesHeader.css">
 </head>
 
-<header>
-    <div id="contenidoHeader"></div>
-</header>
-
 <body>
+    <header>
+        <div class="contenido">
+            <h2>SISTEMA DE MATRÍCULA <BR> IED FRANCISCO DE PAULA SANTANDER</h2>
+        </div>
+        
+        <nav>
+            <div class="nav-left">
+                <a href="#about">Acerca de</a>
+                <a href="#location">Localización</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="nav-center">
+                <img src="/img/escudo.png" alt="Escudo del colegio">
+                <h3>IED FRANCISCO DE <BR> PAULA SANTANDER</h3>
+            </div>
+            <div class="nav-right">
+                <img src="img/iconoinicio.png" alt="">
+                <button onclick="redirigir('/indexiniciosesion.html')">Iniciar Sesión</button>
+                <button>Registrarse</button>
+            </div>
+        </nav>
+    </header>
+
+    
    
 
+    <iframe class="header" src="/Templates/Footer.html" frameborder="0"></iframe>
 </body>
-
-<footer>
-    <div id="contenidoFooter"></div>
-</footer>
 
 </html>

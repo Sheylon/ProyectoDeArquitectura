@@ -9,6 +9,17 @@ body {
 
 }
 
+.header{
+    width: 100% !important;
+    height: 170px;
+
+}
+
+
+.footer{
+    width: 100% !important;
+}
+
 h1 {
     font-size: 20px;
     margin: 0px 0;

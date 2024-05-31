@@ -6,31 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario de Inscripción</title>
   <link rel="stylesheet" href="/css/stylesinscripcion.css">
+  <link rel="stylesheet" href="/css/stylesHeader.css">
+
+  <script src="/js/scrptinscripcion.js"></script>
 </head>
 
 <body>
-  
-  <header>
-    <div class="escudo">
-      <!-- Escudo en la parte derecha -->
-      <img src="img/escudo.png" alt="Escudo">
-    </div>
-    
-    <div class="titulo">
-      <!-- Texto del título -->
-      <h1>Inscripción de Estudiante</h1>
-    </div>
-    <div class="inicio">
-      <!-- Icono de inicio (puedes usar una imagen o un icono de fuente) -->
-      <a href="#"><img src="img/iconoinicio.png" alt="inicio"></a>
-    </div>
-    <div class="sesion">
-      <!-- Botones de iniciar sesión y registrarse -->
-      <button>Iniciar Sesión</button>
-      <button>Registrarse</button>
-    </div>
-    
+
+    <header>
+      <div class="contenido">
+         <h2>SISTEMA DE MATRÍCULA <BR> IED FRANCISCO DE PAULA SANTANDER</h2>
+      </div>
+      
+      <nav>
+        <div class="nav-left">
+          <a href="#about">Acerca de</a>
+          <a href="#location">Localización</a>
+          <a href="#contact">Contacto</a>
+        </div>
+        <div class="nav-center">
+          <img src="/img/escudo.png" alt="Escudo del colegio">
+          <h3>IED FRANCISCO DE <BR> PAULA SANTANDER</h3>
+        </div>
+        <div class="nav-right">
+          <img src="img/iconoinicio.png" alt="">
+          <button onclick="redirigir('/indexiniciosesion.html')">Iniciar Sesión</button>
+          <button>Registrarse</button>
+        </div>
+      </nav>
   </header>
+   
+  <div class="title">
+    <h1>Inscripción de Estudiante</h1>
+  </div>
 
   <div class="container">
     <h2>Información Personal Del Estudiante</h2>
@@ -94,14 +102,11 @@
       <div class="form-group">
         <input type="submit" value="Guardar">
       </div>
-
     </form>
-
-
   </div>
 
 
-
+  <iframe class="header" src="/Templates/Footer.html" frameborder="0"></iframe>
 </body>
 
 </html>

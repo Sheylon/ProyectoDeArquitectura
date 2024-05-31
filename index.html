@@ -6,32 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Matrícula - IED Francisco de Paula Santander</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/stylesHeader.css">
+    <script src="/js/scrptindex.js"></script>
 
-
-    
 </head>
 
 <body>
     <header>
-        <h1>SISTEMA DE MATRÍCULA</h1>
-        <h2>IED FRANCISCO DE PAULA SANTANDER</h2>
+        <div class="contenido">
+            <h2>SISTEMA DE MATRÍCULA <BR> IED FRANCISCO DE PAULA SANTANDER</h2>
+        </div>
+        
+        <nav>
+            <div class="nav-left">
+                <a href="#about">Acerca de</a>
+                <a href="#location">Localización</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="nav-center">
+                <img src="/img/escudo.png" alt="Escudo del colegio">
+                <h3>IED FRANCISCO DE <BR> PAULA SANTANDER</h3>
+            </div>
+            <div class="nav-right">
+                <img src="img/iconoinicio.png" alt="">
+                <button onclick="redirigir('/indexiniciosesion.html')">Iniciar Sesión</button>
+                <button>Registrarse</button>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <div class="nav-left">
-            <a href="#about">Acerca de</a>
-            <a href="#location">Localización</a>
-            <a href="#contact">Contacto</a>
-        </div>
-        <div class="nav-center">
-            <img src="/img/escudo.png" alt="Escudo del colegio">
-            <h3>IED FRANCISCO DE <BR> PAULA SANTANDER</h3>
-        </div>
-        <div class="nav-right">
-            <button>Iniciar Sesión</button>
-            <button>Registrarse</button>
-        </div>
-    </nav>
     <main class="main parent-module">
         <section class="left-section">
             <h1>Módulo Para Padres <br>De Familia</h1>
@@ -41,7 +44,7 @@
                 Descubre como este módulo puede facilitar tu
                 experiencia como padre o madre en nuestra
                 comunidad escolar. </p>
-            <button class="button" name="button" type="button">Continuar</button>
+            <button class="button" name="button" type="button" onclick="redirigir('/indexmpadres.html')" >Continuar</button>
         </section>
         <section class="right-section">
             <img src="/img/familia.jpg" alt="Imagen del módulo para padres de familia">
@@ -58,7 +61,7 @@
                 de manera eficiente. descubre como este módulo puede optimeizar
                 las tareas adnministrativas en nuestra institución educativa.
             </p>
-            <button class="button2" name="button2" type="button">Continuar</button>
+            <button class="button2" name="button2" type="button"  onclick="redirigir('/indexmpadres.html')" >Continuar</button>
         </section>
         <section class="right-section">
             <img src="/img/administrativo.jpg" alt="Imagen del módulo para secretaría">
@@ -75,7 +78,7 @@
                 descubre cómo este módulo puede mejorar laatención y seguimiento
                 psicológico en nuestra institución educativa.
             </p>
-            <button class="button3" name="button3" type="button">Continuar</button>
+            <button class="button3" name="button3" type="button"  onclick="redirigir('/indexmpadres.html')">Continuar</button>
         </section>
         <section class="right-section">
             <img src="/img/salud.jpg" alt="Imagen del módulo para secretaría">
@@ -83,19 +86,8 @@
     </main>
 
 
-    <footer>
-        <div class="containerfooter">
-          <div class="footer-content">
-            <p>&copy; 2024  IED Francisco De Paula Santander. <br> Todos los derechos reservados.</p>
-            <ul class="footer-links">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Acerca de</a></li>
-              <li><a href="#">Servicios</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+
+    <iframe class="header" src="/Templates/Footer.html" frameborder="0"></iframe>
 
 </body>
 
