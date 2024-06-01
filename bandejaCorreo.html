@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeja de notificaciones</title>
+    <link rel="stylesheet" href="/css/stylebandejaCorreo.css">
+    <link rel="stylesheet" href="/css/stylesHeader.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenido">
+            <h2>SISTEMA DE MATRÍCULA <BR> IED FRANCISCO DE PAULA SANTANDER</h2>
+        </div>
+        
+        <nav>
+            <div class="nav-left">
+                <a href="#about">Acerca de</a>
+                <a href="#location">Localización</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="nav-center">
+                <img src="/img/escudo.png" alt="Escudo del colegio">
+                <h3>IED FRANCISCO DE <BR> PAULA SANTANDER</h3>
+            </div>
+            <div class="nav-right">
+                <img src="img/iconoinicio.png" alt="">
+                <button onclick="redirigir('/indexiniciosesion.html')">Iniciar Sesión</button>
+                <button>Registrarse</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div class="title">
+            <h1>Bandeja de notificaciones</h1>
+        </div>
+        
+        <div class="contenidoBandeja">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Emisor</th>
+                        <th>Cargo</th>
+                        <th>Fecha de Envío</th>
+                        <th>Hora de Envío</th>
+                        <th>Abrir Mensaje</th>
+                        <th>Borrar Mensaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>Gerente</td>
+                        <td>2023-05-12</td>
+                        <td>10:30 AM</td>
+                        <td><a href="#abrir1">Abrir</a></td>
+                        <td><a href="#borrar1">Borrar</a></td>
+                    </tr>
+                    <tr>
+                        <td>María Gómez</td>
+                        <td>Directora</td>
+                        <td>2023-05-13</td>
+                        <td>02:45 PM</td>
+                        <td><a href="#abrir2">Abrir</a></td>
+                        <td><a href="#borrar2">Borrar</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+   
+    <iframe class="footer" src="/Templates/Footer.html" frameborder="0"></iframe>
+</body>
+
+</html>
