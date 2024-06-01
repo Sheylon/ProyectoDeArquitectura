@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de Inscripción</title>
-  <link rel="stylesheet" href="/css/stylesconsultaMatriculas.css">
+  <title>Consultar estado de Matricula</title>
+  <link rel="stylesheet" href="/css/stylesconsultaMatriculas2.css">
   <link rel="stylesheet" href="/css/stylesHeader.css">
 
 
@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <header>
       <div class="contenido">
          <h2>SISTEMA DE MATRÍCULA <BR> IED FRANCISCO DE PAULA SANTANDER</h2>
@@ -43,27 +42,27 @@
   </div>
 
   <div class="container">
-
     <div class="descricion ">
-      <p class="textodescripcion">Introduzca el correo electronico <br> con el cual se registró para <br> enviar código de matricula</p>
+      <p class="textodescripcion">Introduzca el codigo de matricula <br> dado en el proceso de matricula</p>
     </div>
     <div class="formulario">
-      <form>
+
+      <form >
         <div class="input-group">
-          <label for="email"><i class="far fa-envelope"></i></label>
-          <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+          <input type="codigo" id="codigo" name="codigo" placeholder="Codigo De Matricula" required>
         </div>
-        
-        <button type="submit">Eviar correo </button>
+        <div class="estado">
+          <p>Estado De Matricula : </p>
+        </div>
+        <button type="submit">Colsutar Estado de matricula</button>
       </form>
-      <p>Al darle eviar debe revisar el correo electronico ingresado</p>
+
     </div>
+
   </div>
+  <a class="regresar" href="/consultarMatriculaPag1.html">Si no cuenta con tal codigo, dar Clic aqui!</a>
 
-  <button type="submit">Continuar</button>
-
-
-  <iframe class="header" src="/Templates/Footer.html" frameborder="0"></iframe>
+  <iframe class="Footer" src="/Templates/Footer.html" frameborder="0"></iframe>
 </body>
 
 </html>
