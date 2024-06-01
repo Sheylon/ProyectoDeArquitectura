@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="/css/stylesHeader.css">
+    <link rel="stylesheet" href="/css/stylesinscripcion dato alumno.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>SISTEMA DE MATRÍCULA</h1>
+        <h2>Inscripción Estudiante</h2>
+      </header>
+      <nav>
+        <div class="nav-left">
+          <button>Datos Alumno</button>
+          <button>Datos salud</button>
+          <button>Datos Acudiente</button>
+          <button> Información Académica</button>
+        </div>
+        <div class="nav-center">
+          <img src="/img/escudo.png" alt="Escudo del colegio">
+          <h3>IED FRANCISCO DE <BR> PAULA SANTANDER</h3>
+        </div>
+        <div class="nav-right">
+          <button>Cerrar sesión</button>
+        </div>
+      </nav>
+      <div class="container">
+        </form>
+        <h2>Información básica</h2>
+        <form action="#" method="post">
+          <div class="form-group-documento">
+            <input type="text" id="tipodocumento" name="tipodocumento" placeholder="Grupo sanguineo" required>
+            <input type="text" id="numdocumet" name="numdocumet" placeholder="EPS" required>
+          </div>
+          <br>
+          <div class="linea"></div>
+        </form>
+        <h2>Informacón de contacto en caso de emergencia</h2>
+        <form action="#" method="post">
+          <div class="form-group-documento">
+            <input type="text" id="sexo" name="sexo" placeholder="Nombre del contacto de emergencia" required>
+            <input type="text" id="fechanacimiento" name="fechanacimiento" placeholder="parentesco" required>
+          </div>
+          <div class="form-group-documento">
+            <input type="text" id="depnacimiento" name="depnacimiento" placeholder="Número telefónico" required>
+          </div><br>
+          <div class="linea"></div>
+        </form>
+        <h2>Historial </h2>
+        <form action="#" method="post">
+          <div class="form-group-documento2">
+            <input type="text" id="deprecidencia" name="deprecidencia"
+              placeholder="Alergías (Por ejemplo. a alimentos, medicamentos, etc.)" required>
+          </div>
+          <div class="form-group-documento2">
+            <input type="text" id="zona" name="zona"
+              placeholder="Condiciones médicas cronicas (por ejemplo.Asma, diabetes, etc.)" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Guardar">
+          </div>
+        </form>
+      </div>
+    
+   
+
+    <iframe class="header" src="/Templates/Footer.html" frameborder="0"></iframe>
+</body>
+
+</html>

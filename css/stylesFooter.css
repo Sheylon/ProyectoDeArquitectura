@@ -49,3 +49,7 @@ footer {
   color: #fff;
   text-decoration: none;
 }
+
+.footer-links a:hover {
+  color:rgb(253, 252, 209);
+    }
