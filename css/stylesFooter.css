@@ -1,7 +1,6 @@
 body {
   margin: 0;
   width: 100%;
-  display: flex;
   flex-direction: column;
 }
 
@@ -9,7 +8,6 @@ footer {
   background-color: #333;
   color: #fff;
   padding: 20px 0;
-  position: fixed; /* Hacer que el footer se mantenga fijo en la parte inferior */
   width: 100%; /* Ocupar todo el ancho de la pantalla */
   bottom: 0; /* Fijar el footer en la parte inferior */
 }
