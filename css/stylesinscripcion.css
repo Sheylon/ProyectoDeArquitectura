@@ -124,7 +124,6 @@ form-group-documento label {
 .linea {
   border: none;
   border-top: 1px solid black;
-  /* Color y grosor de la línea */
   width: 100%;
   /* Anchura de la línea */
   margin: 0px auto;
